@@ -466,8 +466,9 @@ class Connection:
         See `Connection.commit() <https://www.python.org/dev/peps/pep-0249/#commit>`_
         in the specification.
         """
-        self._execute_command(COMMAND.COM_QUERY, "COMMIT")
-        self._read_ok_packet()
+        #self._execute_command(COMMAND.COM_QUERY, "COMMIT")
+        #self._read_ok_packet()
+        pass
 
     def rollback(self):
         """
@@ -476,8 +477,9 @@ class Connection:
         See `Connection.rollback() <https://www.python.org/dev/peps/pep-0249/#rollback>`_
         in the specification.
         """
-        self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
-        self._read_ok_packet()
+        #self._execute_command(COMMAND.COM_QUERY, "ROLLBACK")
+        #self._read_ok_packet()
+        pass
 
     def show_warnings(self):
         """Send the "SHOW WARNINGS" SQL command."""
